@@ -1,25 +1,4 @@
-<<<<<<< HEAD
-# desafio-front
-
-## Project setup
-```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run dev
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
-=======
-# Desafio Front-End
+# Desafio Front-End GOAT
 
 ## Começando
 - Faça um fork deste repositório.
@@ -33,15 +12,14 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
   - Buscar Usuário: __GET__ `/usuarios/1` obtém o usuário cujo id é 1.
   - Criar Usuário: __POST__ `/usuarios` adiciona um usuário à coleção.
   - Editar Usuário: __PUT__ `/usuarios/1` edita o usuário cujo id é 1.
-  - Excluir Usuário: __DELETE__ `/usuarios/1` deleta o usuário cujo id é 1.
-- 
+  - Excluir Usuário: __DELETE__ `/usuarios/1` deleta o usuário cujo id é 1. 
 
 ## Extras (Não obrigatórios, mas será visto como um diferencial)
 - Utilizar máscaras nos campos dos formulários.
 - Utilizar alguma biblioteca de componentes, preferencialmente Vuetify. 
 - Utilizar Vuex para gerenciamento de estado.
 - Realizar testes unitários.
-- Caso deseje usar mais de uma pagina utilizar Vue Router para gerenciamento de rotas.  
+- Caso deseje usar mais de uma página utilizar Vue Router para gerenciamento de rotas.  
 - Caso deseje, você pode adicionar dependências ou outros recursos que julgar necessário em seu código.
     
 ## API a ser consumida (Exemplo)
@@ -74,4 +52,4 @@ O JSON abaixo que simula o banco fica localizado no arquivo `db.json` dentro do 
 __ATENÇÃO__: foque em entregar alguma coisa fechada e funcional, Caso não termine tudo a tempo, envie o código assim mesmo, pois o seu trabalho será avaliado até onde você conseguiu fazer.
 
 *Desejo um bom teste para você!*
->>>>>>> 694ec2821d33c23bb24bede7f7686a5b76e638af
+
