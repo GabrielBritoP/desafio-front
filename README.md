@@ -1,4 +1,4 @@
-# Desafio Front-End
+# Desafio Front-End GOAT
 
 ## Começando
 - Faça um fork deste repositório.
@@ -12,15 +12,14 @@
   - Buscar Usuário: __GET__ `/usuarios/1` obtém o usuário cujo id é 1.
   - Criar Usuário: __POST__ `/usuarios` adiciona um usuário à coleção.
   - Editar Usuário: __PUT__ `/usuarios/1` edita o usuário cujo id é 1.
-  - Excluir Usuário: __DELETE__ `/usuarios/1` deleta o usuário cujo id é 1.
-- 
+  - Excluir Usuário: __DELETE__ `/usuarios/1` deleta o usuário cujo id é 1. 
 
 ## Extras (Não obrigatórios, mas será visto como um diferencial)
 - Utilizar máscaras nos campos dos formulários.
 - Utilizar alguma biblioteca de componentes, preferencialmente Vuetify. 
 - Utilizar Vuex para gerenciamento de estado.
 - Realizar testes unitários.
-- Caso deseje usar mais de uma pagina utilizar Vue Router para gerenciamento de rotas.  
+- Caso deseje usar mais de uma página utilizar Vue Router para gerenciamento de rotas.  
 - Caso deseje, você pode adicionar dependências ou outros recursos que julgar necessário em seu código.
     
 ## API a ser consumida (Exemplo)
