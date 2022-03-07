@@ -29,17 +29,12 @@
 
       <div>
         <label for="email"> Email </label>
-        <input
-          id="email"
-          type="email"
-          placeholder="email"
-          v-model="formData.email"
-        />
+        <input id="email" type="email" placeholder="email" v-model="formData.email"/>
       </div>
 
       <div>
         <label for="cpf"> CPF </label>
-        <input id="cpf" type="text" placeholder="cpf" v-model="formData.cpf" />
+        <input id="cpf" type="text" placeholder="cpf" v-mask="'###.###.###-##'" v-model="formData.cpf" />
       </div>
 
       <button>alterar dados</button>
@@ -49,8 +44,10 @@
 
 <script>
 import axios from "axios";
+import {mask} from 'vue-the-mask';
 export default {
   name: "PutData",
+  directives: {mask},
   data() {
     return {
       formData: {

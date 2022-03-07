@@ -1,5 +1,21 @@
 <template>
   <div>
+     <v-container
+    id="input-usage"
+    fluid
+  >
+    <v-row>
+      <v-col cols="12">
+        <v-input
+          :messages="['Messages']"
+          append-icon="mdi-close"
+          prepend-icon="mdi-phone"
+        >
+          Default Slot
+        </v-input>
+      </v-col>
+    </v-row>
+  </v-container>
     <form @submit.prevent="postData">
       <div>
         <label for="id"> Id </label>
@@ -38,7 +54,7 @@
 
       <div>
         <label for="cpf"> CPF </label>
-        <input id="cpf" type="text" placeholder="cpf" v-model="formData.cpf" />
+        <input id="cpf" type="text" placeholder="cpf" v-mask="'###.###.###-##'" v-model="formData.cpf" />
       </div>
 
       <button>enviar dados</button>
@@ -48,9 +64,11 @@
 
 <script>
 import axios from "axios";
+import {mask} from 'vue-the-mask'
 
 export default {
   name: "PostData",
+  directives: {mask},
   data() {
     return {
       formData: {
@@ -79,6 +97,12 @@ export default {
 </script>
 
 <style scoped>
+  #input-usage .v-input__prepend-outer,
+  #input-usage .v-input__append-outer,
+  #input-usage .v-input__slot,
+  #input-usage .v-messages {
+    border: 1px dashed rgba(0,0,0, .4);
+  }
 div {
   margin-top: 1rem;
 }
