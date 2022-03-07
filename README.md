@@ -1,5 +1,5 @@
 # Desafio Front-End GOAT
-
+ Axios foi utilizado para fazer requisições
 ## Começando
 - Faça um fork deste repositório.
 - Run `npm install` para instalar as dependencias do projeto.

@@ -1,19 +1,28 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <img alt="Vue logo" src="./assets/logo.png" />
+    <GetData />
+    <PostData />
+    <PutData />
+    <DeleteData />
+ 
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import PutData from "./components/Put.vue";
+import GetData from "./components/Get.vue";
+import PostData from "./components/Post.vue";
+import DeleteData from "./components/Delete.vue";
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
-  }
-}
+    GetData,
+    PostData,
+    PutData,
+    DeleteData,
+  },
+};
 </script>
 
 <style>
