@@ -1,14 +1,14 @@
 <template>
   <div>
     <h2>Informe o id para deletar</h2>
-    <form @submit.prevent="deleteData">
+    <v-form @submit.prevent="deleteData">
       <div>
         <label for="id"> Id </label>
-        <input id="id" type="number" placeholder="id" v-model="formData.id" />
+        <v-text-field id="id" type="number" placeholder="id" v-model="formData.id" />
       </div>
 
-      <button>enviar dados</button>
-    </form>
+      <v-btn  rounded>enviar dados</v-btn>
+    </v-form>
   </div>
 </template>
 
@@ -42,6 +42,7 @@ export default {
 <style scoped>
 div {
   margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 form {
   display: flex;
@@ -49,7 +50,7 @@ form {
   gap: 1rem;
   align-items: center;
 }
-input {
+v-text-field {
   width: 10rem;
 }
 </style>

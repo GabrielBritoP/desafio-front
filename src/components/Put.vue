@@ -1,15 +1,15 @@
 <template>
   <div>
     <h2>Informe o id e altere os campos</h2>
-    <form @submit.prevent="putData">
+    <v-form  @submit.prevent="putData">
       <div>
         <label for="id"> Id </label>
-        <input id="id" type="number" placeholder="id" v-model="formData.id" />
+        <v-text-field id="id" type="number" placeholder="id" v-model="formData.id" />
       </div>
 
       <div>
         <label for="nome"> Nome </label>
-        <input
+        <v-text-field
           id="nome"
           type="text"
           placeholder="nome"
@@ -19,7 +19,7 @@
 
       <div>
         <label for="matricula"> Matricula </label>
-        <input
+        <v-text-field
           id="matricula"
           type="text"
           placeholder="matricula"
@@ -29,16 +29,16 @@
 
       <div>
         <label for="email"> Email </label>
-        <input id="email" type="email" placeholder="email" v-model="formData.email"/>
+        <v-text-field id="email" type="email" placeholder="email" v-model="formData.email"/>
       </div>
 
       <div>
         <label for="cpf"> CPF </label>
-        <input id="cpf" type="text" placeholder="cpf" v-mask="'###.###.###-##'" v-model="formData.cpf" />
+        <v-text-field id="cpf" type="text" placeholder="cpf" v-mask="'###.###.###-##'" v-model="formData.cpf" />
       </div>
 
-      <button>alterar dados</button>
-    </form>
+      <v-btn  rounded @click="putData();showAlert()">alterar dados</v-btn>
+    </v-form>
   </div>
 </template>
 
@@ -59,6 +59,9 @@ export default {
     };
   },
   methods: {
+     showAlert() {
+      this.$swal("Alteração feita");
+    },
     putData() {
       axios
         .put(`http://localhost:3000/usuarios/${this.formData.id}`, this.formData)
@@ -71,10 +74,14 @@ export default {
         });
     },
   },
+
 };
 </script>
 
 <style scoped>
+v-btn{
+  font-weight: bold;
+}
 div {
   margin-top: 1rem;
 }
@@ -84,7 +91,7 @@ form {
   gap: 1rem;
   align-items: center;
 }
-input {
+v-text-field {
   width: 10rem;
 }
 </style>

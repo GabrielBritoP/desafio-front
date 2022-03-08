@@ -20,6 +20,27 @@
       "matricula": "teste",
       "email": "teste",
       "cpf": "teste"
+    },
+    {
+      "nome": "Gabriel Brito",
+      "matricula": "71382212",
+      "email": "iamgabrielbp@gmail",
+      "cpf": "333.333.333-33",
+      "id": "1"
+    },
+    {
+      "id": "4",
+      "nome": "teste",
+      "matricula": "teste",
+      "email": "teste",
+      "cpf": "111.111.111-11"
+    },
+    {
+      "nome": "teste",
+      "matricula": "teste",
+      "email": "teste",
+      "cpf": "333.333.333-33",
+      "id": 6
     }
   ]
 }

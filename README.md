@@ -1,5 +1,7 @@
 # Desafio Front-End GOAT
- Axios foi utilizado para fazer requisições
+ Utilizado Axios para fazer requisições
+ Utilizado Vuetify para estilização
+ Utilizado vue-the-mask para mascara nos inputs.
 ## Começando
 - Faça um fork deste repositório.
 - Run `npm install` para instalar as dependencias do projeto.
