@@ -99,4 +99,7 @@ form {
 v-text-field {
   width: 10rem;
 }
+button{
+  margin-bottom: 2rem;
+}
 </style>

@@ -8,13 +8,6 @@
       "cpf": "teste"
     },
     {
-      "nome": "gabriel3",
-      "matricula": "10503013",
-      "email": "gabriel@gmail.com3",
-      "cpf": "333.333.333-33",
-      "id": "3"
-    },
-    {
       "id": "5",
       "nome": "gabriel",
       "matricula": "1050301",
@@ -29,11 +22,11 @@
       "cpf": "333.333.333-33"
     },
     {
-      "id": "4",
       "nome": "gabriel",
       "matricula": "3021321",
       "email": "gabriel@gmail.com",
-      "cpf": "333.333.333-33"
+      "cpf": "777.777.777-77",
+      "id": "4"
     },
     {
       "id": "2",

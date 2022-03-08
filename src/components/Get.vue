@@ -14,10 +14,11 @@
 <script>  
 import axios from "axios";
 export default {
-  name: "GetData",
+  name: "Get",
      data () {
       return {
         loader: null,
+        loading:false,
         test: "string",
         allData:[],
         headers:[
