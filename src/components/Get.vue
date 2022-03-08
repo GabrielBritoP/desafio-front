@@ -1,11 +1,21 @@
 <template>
   <div>
     <v-btn :loading="loading" :disabled="loading" @click="loader = 'loading';getData()" rounded> Get data</v-btn>
-    <div> {{allData}}</div>
+    <div>
+  <ul>
+      <li v-for="data in allData" :key="data.id">
+      ID: {{ data.id }} -
+      Nome: {{ data.nome }} - 
+      Matricula: {{ data.matricula }} - 
+      Email: {{ data.email }} - 
+      Data: {{ data.cpf }} 
+      </li>
+</ul>
+    </div>
   </div>
 </template>
 
-<script>
+<script>  
 import axios from "axios";
 export default {
   name: "GetData",
@@ -36,7 +46,7 @@ export default {
         .get(" http://localhost:3000/usuarios")
         .then((res) => {
           console.log(res.data);
-          this.allData=res.data;
+          this.allData = res.data;
         })
         .catch((error) => {
           console.log(error);
@@ -47,6 +57,12 @@ export default {
 </script>
 
 <style scoped>
+button{
+  margin-bottom: 2rem;
+}
+ul{
+  padding: 0;
+}
 
 
 </style>

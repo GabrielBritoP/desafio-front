@@ -8,25 +8,11 @@
       "cpf": "16670793014"
     },
     {
-      "id": 5,
-      "nome": "Bradley Todd",
-      "matricula": "7617254",
-      "email": "elit.a@goat.com",
-      "cpf": "06313855094"
-    },
-    {
       "id": "teste",
       "nome": "teste",
       "matricula": "teste",
       "email": "teste",
       "cpf": "teste"
-    },
-    {
-      "nome": "Gabriel Brito",
-      "matricula": "71382212",
-      "email": "iamgabrielbp@gmail",
-      "cpf": "333.333.333-33",
-      "id": "1"
     },
     {
       "id": "4",
@@ -41,6 +27,34 @@
       "email": "teste",
       "cpf": "333.333.333-33",
       "id": 6
+    },
+    {
+      "id": "0",
+      "nome": "",
+      "matricula": "",
+      "email": "",
+      "cpf": ""
+    },
+    {
+      "id": "-1",
+      "nome": "",
+      "matricula": "",
+      "email": "",
+      "cpf": ""
+    },
+    {
+      "id": 7,
+      "nome": "",
+      "matricula": "",
+      "email": "",
+      "cpf": ""
+    },
+    {
+      "id": "1",
+      "nome": "",
+      "matricula": "",
+      "email": "",
+      "cpf": ""
     }
   ]
 }

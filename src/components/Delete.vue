@@ -1,13 +1,13 @@
 <template>
   <div>
     <h2>Informe o id para deletar</h2>
-    <v-form @submit.prevent="deleteData">
+    <v-form >
       <div>
         <label for="id"> Id </label>
         <v-text-field id="id" type="number" placeholder="id" v-model="formData.id" />
       </div>
 
-      <v-btn  rounded>enviar dados</v-btn>
+      <v-btn  @click="deleteData()">Deletar</v-btn>
     </v-form>
   </div>
 </template>

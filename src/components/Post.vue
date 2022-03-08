@@ -80,6 +80,10 @@ export default {
      showAlert() {
       this.$swal("Cadastro feito");
     },
+    showErrorAlert(msg){
+       this.$swal(msg);
+    },
+    
     postData() {
       console.log("entrou");
       axios
@@ -89,6 +93,7 @@ export default {
         })
         .catch((error) => {
           console.log(error);
+          this.showErrorAlert("Erro ao cadastrar");
         });
     },
     
