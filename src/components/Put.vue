@@ -1,7 +1,7 @@
 <template>
   <div>
     <h2>Informe o id e altere os campos</h2>
-    <v-form  @submit.prevent="putData">
+    <v-form  @submit.prevent="putData" ref="form"> 
       <div>
         <label for="id"> Id </label>
         <v-text-field id="id" type="number" placeholder="id" v-model="formData.id" />
@@ -37,7 +37,7 @@
         <v-text-field id="cpf" type="text" placeholder="cpf" v-mask="'###.###.###-##'" v-model="formData.cpf" />
       </div>
 
-      <v-btn  rounded @click="putData();showAlert()">alterar dados</v-btn>
+      <v-btn  rounded @click="putDataMethod()">alterar dados</v-btn>
     </v-form>
   </div>
 </template>
@@ -62,12 +62,17 @@ export default {
      showAlert() {
       this.$swal("Alteração feita");
     },
-    putData() {
+     reset () {
+        this.$refs.form.reset()
+      },
+    putDataMethod() {
       axios
         .put(`http://localhost:3000/usuarios/${this.formData.id}`, this.formData)
         .then((res) => {
           console.log(res.data);
+          this.showAlert()
           console.log("dados alterados");
+          this.reset();
         })
         .catch((error) => {
           console.log(error);

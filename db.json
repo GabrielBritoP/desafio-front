@@ -1,13 +1,6 @@
 {
   "usuarios": [
     {
-      "id": 3,
-      "nome": "Chantale Yang",
-      "matricula": "1050302",
-      "email": "primis.in@goat.com",
-      "cpf": "16670793014"
-    },
-    {
       "id": "teste",
       "nome": "teste",
       "matricula": "teste",
@@ -15,46 +8,39 @@
       "cpf": "teste"
     },
     {
-      "id": "4",
-      "nome": "teste",
-      "matricula": "teste",
-      "email": "teste",
-      "cpf": "111.111.111-11"
-    },
-    {
-      "nome": "teste",
-      "matricula": "teste",
-      "email": "teste",
+      "nome": "gabriel3",
+      "matricula": "10503013",
+      "email": "gabriel@gmail.com3",
       "cpf": "333.333.333-33",
-      "id": 6
+      "id": "3"
     },
     {
-      "id": "0",
-      "nome": "",
-      "matricula": "",
-      "email": "",
-      "cpf": ""
+      "id": "5",
+      "nome": "gabriel",
+      "matricula": "1050301",
+      "email": "gabriel@gmail.com",
+      "cpf": "333.333.333-33"
     },
     {
-      "id": "-1",
-      "nome": "",
-      "matricula": "",
-      "email": "",
-      "cpf": ""
+      "id": "7",
+      "nome": "gabriel",
+      "matricula": "1050301",
+      "email": "gabriel@gmail.com",
+      "cpf": "333.333.333-33"
     },
     {
-      "id": 7,
-      "nome": "",
-      "matricula": "",
-      "email": "",
-      "cpf": ""
+      "id": "4",
+      "nome": "gabriel",
+      "matricula": "3021321",
+      "email": "gabriel@gmail.com",
+      "cpf": "333.333.333-33"
     },
     {
-      "id": "1",
-      "nome": "",
-      "matricula": "",
-      "email": "",
-      "cpf": ""
+      "id": "2",
+      "nome": "gabriel",
+      "matricula": "3021321",
+      "email": "gabriel@gmail.com",
+      "cpf": "333.333.333-33"
     }
   ]
 }

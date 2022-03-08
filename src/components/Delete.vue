@@ -1,13 +1,18 @@
 <template>
   <div>
     <h2>Informe o id para deletar</h2>
-    <v-form >
+    <v-form>
       <div>
         <label for="id"> Id </label>
-        <v-text-field id="id" type="number" placeholder="id" v-model="formData.id" />
+        <v-text-field
+          id="id"
+          type=""
+          placeholder="id"
+          v-model="formData.id"
+        />
       </div>
 
-      <v-btn  @click="deleteData()">Deletar</v-btn>
+      <v-btn @click="deleteDataMethod()">Deletar</v-btn>
     </v-form>
   </div>
 </template>
@@ -24,17 +29,28 @@ export default {
     };
   },
   methods: {
-    deleteData() {
+    showAlert(msg) {
+      this.$swal(msg);
+    },
+    reset () {
+        this.$refs.form.reset()
+      },
+    deleteDataMethod() {
       axios
         .delete(`http://localhost:3000/usuarios/${this.formData.id}`)
         .then((res) => {
           console.log(res.data);
           console.log("dados deletados");
+          this.$refs.value  = null;
+          this.showAlert("Usuário Deletado");
+          this.reset();
         })
         .catch((error) => {
           console.log(error);
+          this.showAlert("Erro ao deletar")
         });
     },
+   
   },
 };
 </script>

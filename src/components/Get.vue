@@ -1,18 +1,14 @@
 <template>
-  <div>
-    <v-btn :loading="loading" :disabled="loading" @click="loader = 'loading';getData()" rounded> Get data</v-btn>
-    <div>
-  <ul>
-      <li v-for="data in allData" :key="data.id">
-      ID: {{ data.id }} -
-      Nome: {{ data.nome }} - 
-      Matricula: {{ data.matricula }} - 
-      Email: {{ data.email }} - 
-      Data: {{ data.cpf }} 
-      </li>
-</ul>
-    </div>
-  </div>
+  <v-container>
+    <v-btn :loading="loading" :disabled="loading" @click="loader = 'loading';getDataMethod  ()" rounded> Get data</v-btn>
+
+      <v-data-table
+    :headers="headers"
+    :items="allData"
+    :items-per-page="6"
+    class="elevation-1"
+  ></v-data-table>
+  </v-container>
 </template>
 
 <script>  
@@ -22,13 +18,36 @@ export default {
      data () {
       return {
         loader: null,
-        loading: false,
-        loading2: false,
-        loading3: false,
-        loading4: false,
-        loading5: false,
-        allData:[]
+        test: "string",
+        allData:[],
+        headers:[
+           {
+            text: 'ID',
+            align: 'start',
+            sortable: false,
+            value: 'id',
+          },
+           {
+            text: 'Nome',
+            value: 'nome',
+          },
+           {
+            text: 'Matricula',
+            value: 'matricula',
+          },
+           {
+            text: 'Email',
+            value: 'email',
+          },
+           {
+            text: 'CPF',
+            value: 'cpf',
+          },
+        ]
       }
+    },
+    mounted() {
+      this.getDataMethod()
     },
     watch: {
       loader () {
@@ -39,9 +58,10 @@ export default {
 
         this.loader = null
       },
+     
     },
   methods: {
-    getData() {
+    getDataMethod() {
       axios
         .get(" http://localhost:3000/usuarios")
         .then((res) => {
@@ -60,9 +80,8 @@ export default {
 button{
   margin-bottom: 2rem;
 }
-ul{
-  padding: 0;
+.elevation-1{
+  display: inline;
 }
-
 
 </style>

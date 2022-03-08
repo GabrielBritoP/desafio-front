@@ -1,7 +1,7 @@
 <template>
   <div>
     <h2> Cadastre as informações </h2>
-    <v-form>
+    <v-form ref="form">
       <div>
         <label for="id"> Id </label>
         <v-text-field
@@ -53,7 +53,7 @@
         />
       </div>
 
-      <v-btn rounded @click="postData();showAlert()">enviar dados</v-btn>
+      <v-btn rounded @click="postDataMethod();">enviar dados</v-btn>
     </v-form>
   </div>
 </template>
@@ -77,23 +77,25 @@ export default {
     };
   },
   methods: {
-     showAlert() {
-      this.$swal("Cadastro feito");
-    },
-    showErrorAlert(msg){
+    showAlert(msg){
        this.$swal(msg);
     },
+    reset () {
+        this.$refs.form.reset()
+      },
     
-    postData() {
+    postDataMethod() {
       console.log("entrou");
       axios
         .post(" http://localhost:3000/usuarios", this.formData)
         .then((res) => {
           console.log(res.data);
+          this.showAlert("Cadastro Feito")
+          this.reset();
         })
         .catch((error) => {
           console.log(error);
-          this.showErrorAlert("Erro ao cadastrar");
+          this.showAlert("Erro ao cadastrar");
         });
     },
     

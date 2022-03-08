@@ -2,6 +2,7 @@
  Utilizado Axios para fazer requisições
  Utilizado Vuetify para estilização
  Utilizado vue-the-mask para mascara nos inputs.
+ Utilizado sweetalert2 para customização de alerts
 ## Começando
 - Faça um fork deste repositório.
 - Run `npm install` para instalar as dependencias do projeto.
