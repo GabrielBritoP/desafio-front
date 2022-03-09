@@ -1,8 +1,9 @@
 # Desafio Front-End GOAT
- Utilizado Axios para fazer requisições
- Utilizado Vuetify para estilização
+ Utilizado Axios para fazer requisições.
+ Utilizado Vuetify para estilização.
  Utilizado vue-the-mask para mascara nos inputs.
- Utilizado sweetalert2 para customização de alerts
+ Utilizado sweetalert2 para customização de alerts.
+ Utilizado vue router para rotas.
 ## Começando
 - Faça um fork deste repositório.
 - Run `npm install` para instalar as dependencias do projeto.
