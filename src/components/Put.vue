@@ -23,6 +23,7 @@
           id="matricula"
           type="text"
           placeholder="matricula"
+            v-mask="'#########'"
           v-model="formData.matricula"
         />
       </div>
