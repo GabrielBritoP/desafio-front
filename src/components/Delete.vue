@@ -1,7 +1,7 @@
 <template>
   <div>
     <h2>Informe o id para deletar</h2>
-    <v-form>
+    <v-form ref="form">
       <div>
         <label for="id"> Id </label>
         <v-text-field
@@ -41,7 +41,6 @@ export default {
         .then((res) => {
           console.log(res.data);
           console.log("dados deletados");
-          this.$refs.value  = null;
           this.showAlert("Usuário Deletado");
           this.reset();
         })

@@ -8,31 +8,17 @@
       "cpf": "teste"
     },
     {
-      "id": "5",
-      "nome": "gabriel",
-      "matricula": "1050301",
-      "email": "gabriel@gmail.com",
-      "cpf": "333.333.333-33"
+      "id": "1",
+      "nome": "usuario 2",
+      "matricula": "2222222",
+      "email": "iamgabrielbp@gmail.com",
+      "cpf": "222.222.222-22"
     },
     {
-      "id": "7",
-      "nome": "gabriel",
-      "matricula": "1050301",
-      "email": "gabriel@gmail.com",
-      "cpf": "333.333.333-33"
-    },
-    {
-      "nome": "gabriel",
-      "matricula": "3021321",
-      "email": "gabriel@gmail.com",
-      "cpf": "777.777.777-77",
-      "id": "4"
-    },
-    {
-      "id": "2",
-      "nome": "gabriel",
-      "matricula": "3021321",
-      "email": "gabriel@gmail.com",
+      "id": "3",
+      "nome": "usuario 3",
+      "matricula": "333333333",
+      "email": "iamgabrielbp@gmail.com",
       "cpf": "333.333.333-33"
     }
   ]
